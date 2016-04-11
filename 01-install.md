@@ -46,13 +46,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I installed Python 2.7. This is the version of Python I'm the most comfortable with because all of the Python tutorials I've studied use Python 2.7.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> In the command line you can type 'python --version'. In my case the ouptut is 'Python 2.7.11 :: Anaconda 4.0.0 (x86_64)'.
 
  
 
