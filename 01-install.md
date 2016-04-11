@@ -52,7 +52,7 @@ I installed Python 2.7. This is the version of Python I'm the most comfortable w
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> In the command line you can type 'python --version'. In my case the ouptut is 'Python 2.7.11 :: Anaconda 4.0.0 (x86_64)'.
+In the command line you can type 'python --version'. In my case the ouptut is 'Python 2.7.11 :: Anaconda 4.0.0 (x86_64)'.
 
  
 
