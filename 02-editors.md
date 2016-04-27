@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use vim because it's a popular terminal editor and an important skill to know, since many computers use it as a default.
 
 --
 
@@ -67,6 +67,10 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use PyCharm because it is the IDE that I know the best. I used PyCharm when first learning python in college. Some great features of PyCharm are auto-filling, a visual debugger, and the option to change variable names seamlessly.
+
+PyCharm has a lot of keyboard shortcuts to encourage less clicking. For example, C-R = run, C-D = debug, ⌘-F = find text,⌘-F2 = stop running program, and SHIFT-F2 = stop debugging session.
+
+Even though PyCharm is a fully-developed IDE, there are some ways you can customize it. For example, keyboard-centric coders can choose a distraction free mode to reduce UI elements. There are also two theme options from which to choose: default and darkula (personally I prefer darkula). Furthermore, one of the most useful customizations is the ability to choose performance setting, such as power-save mode.
 
  
