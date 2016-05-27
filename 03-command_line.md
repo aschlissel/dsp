@@ -44,12 +44,12 @@ What do the following commands do:
 `ls -Glp`  
 
 ls: list directory
-ls -a: list all entries including those starting with a dot
-ls -l: list using a long listing format
-ls -lh: list files in human readable format size using a long listing format
-ls -lah: list all files in human readable format size including those starting with a dot using a long listing format
-ls -t: list sorting by modification time
-ls -Glp: display directories with /, excluding groups information, using a long listing format
+ls -a: list all entries including those starting with a dot  
+ls -l: list using a long listing format  
+ls -lh: list files in human readable format size using a long listing format  
+ls -lah: list all files in human readable format size including those starting with a dot using a long listing format  
+ls -t: list sorting by modification time  
+ls -Glp: display directories with /, excluding groups information, using a long listing format  
 
 ---
 
@@ -57,11 +57,11 @@ ls -Glp: display directories with /, excluding groups information, using a long 
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-ls -q: display all nonprinting characters as ?
-ls -r: display files in reverse order
-ls -c: display files by file timestamp
-ls -C: display files in columnar format
-ls -m: display the names as a comma-separated list
+ls -q: display all nonprinting characters as ?  
+ls -r: display files in reverse order  
+ls -c: display files by file timestamp  
+ls -C: display files in columnar format  
+ls -m: display the names as a comma-separated list  
 
 ---
 
@@ -69,11 +69,11 @@ ls -m: display the names as a comma-separated list
 
 What does `xargs` do? Give an example of how to use it.
 
-'xargs' executes a command, passing through constructed argument lists. The arguments are typically a long list of file names piped. 'xargs' passes arguments to command in several bundles, allowing the command to process more arguments than it could otherwise handle at once.
+'xargs' executes a command, passing through constructed argument lists. The arguments are typically a long list of file names piped. 'xargs' passes arguments to command in several bundles, allowing the command to process more arguments than it could otherwise handle at once.  
 
-One of the most important usages of 'xargs' is with the find command.
-For example: Find all the .mp3 files in teh music folder and pass to the ls command, -print0 is required if any filenames contain whitespace: 
-find ./music -name "*.mp3" -print0 | xargs -0 ls
+One of the most important usages of 'xargs' is with the find command.  
+For example: Find all the .mp3 files in teh music folder and pass to the ls command, -print0 is required if any filenames contain whitespace:  
+find ./music -name "*.mp3" -print0 | xargs -0 ls  
 
  
 
