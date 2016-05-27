@@ -73,4 +73,6 @@ PyCharm has a lot of keyboard shortcuts to encourage less clicking. For example,
 
 Even though PyCharm is a fully-developed IDE, there are some ways you can customize it. For example, keyboard-centric coders can choose a distraction free mode to reduce UI elements. There are also two theme options from which to choose: default and darkula (personally I prefer darkula). Furthermore, one of the most useful customizations is the ability to choose performance setting, such as power-save mode.
 
+I also spoke to some of my future classmates at previous Metis events and they said that they would teach me IPython notebook, which I would certainly be open to using. For now, however, I will start with PyCharm.
+
  
