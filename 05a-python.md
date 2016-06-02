@@ -44,7 +44,13 @@ Lists take time proportional to the list's length in average and worst cases (O(
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python's lambda is a tool for building functions. Although lambda isn't necessary, there are situations where it makes writing code a bit easier and cleaner.  
+  
+>> Example:  
+```
+t = ['Lambda', 'can', 'be', 'cool', 'sometimes']  
+sorted(t, key=lambda word: word.upper())
+```
 
 ---
 
