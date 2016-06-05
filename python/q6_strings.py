@@ -18,8 +18,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
-
+```
+  if count <= 9:
+      return('Number of donuts: ' + str(count))
+  elif count >= 10:
+      return('Number of donuts: many')
+```
 
 def both_ends(s):
     """
