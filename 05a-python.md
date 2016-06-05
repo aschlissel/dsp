@@ -26,12 +26,12 @@ How are Python lists and sets similar and different? Give examples of using both
 while a list is ordered, allows duplicates, and is mutable.
 
 >> One example of using a set is to keep track of a guest list when planning a party.
-```
+```python
 RSVP_Yes = {"John", "Mary", "Sue M.", "Jean", "Billy", "Sue Q."}
 ```
 
 >> One example of using a list is to store Tony Musical winners in order.
-```
+```python
 Tony_Winners = ["Contact", "The Producers", "Hairspray", "Avenue Q", "Monty Python's Spamalot"]
 ```
 
@@ -47,7 +47,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >> Python's lambda is a tool for building functions. Although lambda isn't necessary, there are situations where it makes writing code a bit easier and cleaner.  
   
 >> Example:  
-```
+```python
 t = ['Lambda', 'can', 'be', 'cool', 'sometimes']  
 sorted(t, key=lambda word: word.upper())
 ```
@@ -65,33 +65,33 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> For my example I will convert miles to kilometers.
 
 >> List Comprehension
-```
+```python
 miles = [3.1, 6.2, 13.1, 26.2]
 kilometers = [(1.6 * x) for x in miles]
 print kilometers
 ```
 >> Map
-```
+```python
 miles = [3.1, 6.2, 13.1, 26.2]
 kilometers = map(lambda x: (1.6 * x), miles)
 print kilometers
 ```
 >> Filter  
 >> Print just the half marathon and marathon values
-```
+```python
 miles = [3.1, 6.2, 13.1, 26.2]
 pro_runners = filter(lambda x: x > 10, miles)
 print pro_runners
 ```
 >> Set Comprehension  
 >> Set comprehension performs a similar in function to a list comprehension, but it returns a set instead of a list, denoted by curly brackets.
-```
+```python
 miles = {3.1, 6.2, 13.1, 26.2}
 kilometers = {(1.6 * x) for x in miles}
 print kilometers
 ```
 >> Dictionary Comprehension
-```
+```python
 miles = [3.1, 6.2, 13.1, 26.2]
 miles2km = {x: (1.6 * x) for x in miles}
 print miles2km
@@ -105,7 +105,7 @@ print miles2km
 Use Python to compute days between start and stop date.   
 a.  
 
-```
+```python
 date_start = '01-02-2013'    
 date_stop = '07-28-2015'
 ```
@@ -113,7 +113,7 @@ date_stop = '07-28-2015'
 >> 937 days
 
 b.  
-```
+```python
 date_start = '12312013'  
 date_stop = '05282015'  
 ```
@@ -121,7 +121,7 @@ date_stop = '05282015'
 >> 513 days
 
 c.  
-```
+```python
 date_start = '15-Jan-1994'      
 date_stop = '14-Jul-2015'  
 ```
