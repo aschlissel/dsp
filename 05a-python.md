@@ -58,7 +58,44 @@ sorted(t, key=lambda word: word.upper())
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>  List comprehension is an elegant way to define and create a list in Python. It is a substitute for the functions lambda, map(), filter(), and reduce().
+
+>> Map is a cleaner way to write a for loop to perform operations on a list and it usually performs faster than a for loop. Filter prints values in a list that return the boolean True. The same task can also be accomplished using a for loop, but this is cleaner.
+
+>> For my example I will convert miles to kilometers.
+
+>> List Comprehension
+```
+miles = [3.1, 6.2, 13.1, 26.2]
+kilometers = [(1.6 * x) for x in miles]
+print kilometers
+```
+>> Map
+```
+miles = [3.1, 6.2, 13.1, 26.2]
+kilometers = map(lambda x: (1.6 * x), miles)
+print kilometers
+```
+>> Filter  
+>> Print just the half marathon and marathon values
+```
+miles = [3.1, 6.2, 13.1, 26.2]
+pro_runners = filter(lambda x: x > 10, miles)
+print pro_runners
+```
+>> Set Comprehension  
+>> Set comprehension performs a similar in function to a list comprehension, but it returns a set instead of a list, denoted by curly brackets.
+```
+miles = {3.1, 6.2, 13.1, 26.2}
+kilometers = {(1.6 * x) for x in miles}
+print kilometers
+```
+>> Dictionary Comprehension
+```
+miles = [3.1, 6.2, 13.1, 26.2]
+miles2km = {x: (1.6 * x) for x in miles}
+print miles2km
+```
 
 ---
 
