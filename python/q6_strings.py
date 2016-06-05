@@ -19,9 +19,9 @@ def donuts(count):
     'Number of donuts: many'
     """
 ```
-  if count <= 9:
+    if count <= 9:
       return('Number of donuts: ' + str(count))
-  elif count >= 10:
+    elif count >= 10:
       return('Number of donuts: many')
 ```
 
@@ -41,7 +41,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+  if len(s) >= 2:
+      return str(s[:2] + s[-2:])
+  else:
+      return ''
 
 
 def fix_start(s):
