@@ -53,6 +53,11 @@ def front_x(words):
 
 
 
+```
+def last(a):
+    return a[-1]
+```
+
 def sort_last(tuples):
     """
     Given a list of non-empty tuples, return a list sorted in
@@ -67,7 +72,9 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    ```
+    return sorted(tuples, key=last)
+    ```
 
 
 def remove_adjacent(nums):
@@ -86,7 +93,15 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    ```
+    new_list = []
+    last_elem = None
+    for num in nums:
+      if num != last_elem:
+        new_list.append(num)
+        last_elem = num
+    return new_list
+    ```
 
 
 def linear_merge(list1, list2):
@@ -103,4 +118,8 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    ```
+    new_list = list1 + list2
+  
+    return sorted(new_list)
+    ```
