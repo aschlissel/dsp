@@ -41,11 +41,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+  ```
   if len(s) >= 2:
-      return str(s[:2] + s[-2:])
+    return str(s[:2] + s[-2:])
   else:
-      return ''
-
+    return ''
+  ```
 
 def fix_start(s):
     """
@@ -63,7 +64,11 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+  ```
+  it = iter(s)
+  first = next(it)
+  return first + ''.join(it).replace(first, '*') 
+  ```
 
 
 def mix_up(a, b):
@@ -81,7 +86,11 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+  ```
+  new_a = b[0:2] + a[2:]
+  new_b = a[0:2] + b[2:]
+  return new_a + ' ' + new_b
+  ```
 
 
 def verbing(s):
@@ -98,7 +107,16 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+  ```
+  if len(s) < 3:
+    return s
+  else:
+    if (s[-1] != 'g') and (s[-2] != 'n') and (s[-3] != 'i'):
+      s = s + 'ing'
+    else:
+      s = s + 'ly'
+  return s
+  ```
 
 
 def not_bad(s):
@@ -118,7 +136,20 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+   ```
+  n = 'not'
+  b = 'bad'
+  if n and b in s:
+    nt = s.find(n)
+    bad = s.find(b)
+    if nt < bad:
+      s = s.replace(s[nt:(bad+3)], 'good')
+      return s
+    else:
+        return s
+  else:
+    return s
+  ```
 
 
 def front_back(a, b):
@@ -137,4 +168,18 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+  ```
+  if len(a) % 2 == 0:
+    a_index = len(a) // 2
+  else:
+    a_index = (len(a) // 2) + 1
+  if len(b) % 2 == 0:
+    b_index = len(b) // 2
+  else:
+    b_index = (len(b) // 2) + 1
+  a_front = a[:a_index]
+  a_back = a[a_index:]
+  b_front = b[:b_index]
+  b_back = b[b_index:]
+  return a_front + b_front + a_back + b_back
+  ```
