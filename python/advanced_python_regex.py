@@ -54,4 +54,33 @@ def emails(csv_f):
     [email.append(col[3]) for col in csv_f]
     del email[0]
     print email
-    return email
+    return 0
+    
+
+#Q4    
+def email_domains(csv):
+
+    #put emails in a list
+    full_emails = emails(csv_f)
+
+    #make lists to perform operations
+    split_email = []
+    duplicate_domains = []
+    domains = []
+
+    #separate email names from their domains
+    [split_email.extend(item.split("@")) for item in full_emails]
+
+    #make a list with only domains
+    for item in split_email:
+        if '.' in item:
+            duplicate_domains.append(item)
+
+    #remove duplicates from domain list by changing to a set
+    domains_set = set(duplicate_domains)
+    domains = list(domains_set)
+
+    #find out how many different email domains in the list
+    print "There are " + str(len(domains)) + " different email domains."
+    print domains
+    return 0
