@@ -46,3 +46,12 @@ def titles(csv_f):
     #count title frequencies
     prof_titles_count = collections.Counter(prof_titles)
     return prof_titles_count
+
+
+#Q3
+def emails(csv_f):
+    email = []
+    [email.append(col[3]) for col in csv_f]
+    del email[0]
+    print email
+    return email
