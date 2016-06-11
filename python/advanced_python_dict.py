@@ -20,7 +20,7 @@ for this_name in names:
         q6_name_dict.setdefault(row['last_names'], []).append(row[['degree', 'title', 'email']].tolist())
 
 for key in q6_name_dict.keys()[:3]:
-    print key, q6_name_dict[key]
+    print {key: q6_name_dict[key]}
     
     
 #Q7
