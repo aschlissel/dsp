@@ -25,3 +25,9 @@ for key in q6_name_dict.keys()[:3]:
     
 #Q7
 
+q7_dict = {}
+for index,row in df.iterrows():
+    q7_dict.setdefault((row['name'].split()[0], row['name'].split()[-1]), []).append(row[['degree', 'title', 'email']].tolist())
+
+for key in q7_dict.keys()[:3]:
+    print key, q7_dict[key]
