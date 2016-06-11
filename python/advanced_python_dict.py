@@ -31,3 +31,9 @@ for index,row in df.iterrows():
 
 for key in q7_dict.keys()[:3]:
     print {key: q7_dict[key]}
+
+
+#Q8
+
+for key in sorted(q7_dict, key=lambda name: name[1])[:3]:
+    print {key: q7_dict[key]}
