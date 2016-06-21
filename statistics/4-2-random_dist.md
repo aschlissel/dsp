@@ -14,4 +14,9 @@ pmf_rand = thinkstats2.Pmf(rand, label='random')
 thinkplot.Pmf(pmf_rand)
 thinkplot.Show()
 ```
-![Pmf](https://github.com/aschlissel/dsp/blob/master/randomrandom.png)
+![Pmf](https://github.com/aschlissel/dsp/blob/master/randomrandom.png)  
+>> That looks random to me!
+  
+>> Now I will plot the CDF.
+
+
