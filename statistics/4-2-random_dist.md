@@ -14,4 +14,4 @@ pmf_rand = thinkstats2.Pmf(rand, label='random')
 thinkplot.Pmf(pmf_rand)
 thinkplot.Show()
 ```
-![Pmf]
+![Pmf](https://github.com/aschlissel/dsp/blob/master/randomrandom.png)
