@@ -51,3 +51,4 @@ thinkplot.Pmfs([pmf, biased_pmf])
 thinkplot.Show(xlabel='family_size', ylabel='PMF')
 ```
 
+![Pmfs](https://github.com/aschlissel/dsp/blob/master/figure_1.png)
