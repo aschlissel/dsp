@@ -59,4 +59,6 @@ def Cohens_d(weight1, weight2):
 ```
   
 Answer  
->> The difference in means is 0.0886729270726 standard deviations. Although it was more than the difference in means of pregnancy lengths (0.029 standard deviations), less than 0.1 standard deviations is very small. Thus, first babies are slightly lighter than other babies (remember, I subtracted weight2 from weight1 to get a positive number), but it is not by much at all.
+>> The difference in means is 0.0886729270726 standard deviations.  
+
+>>Although it was more than the difference in means of pregnancy lengths (0.029 standard deviations), less than 0.1 standard deviations is very small. Thus, first babies are slightly lighter than other babies (remember, I subtracted weight2 from weight1 to get a positive number), but it is not by much at all.
