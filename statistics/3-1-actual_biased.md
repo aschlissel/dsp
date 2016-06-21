@@ -14,6 +14,10 @@ Plot the actual and biased distributions and compute their means.
 >> To compute the actual distriution of NUMKDHH, I made a Pmf of NUMKDHH.  
   
 ```python
+import thinkstats2
+import thinkplot
+import chap01soln
+
 resp = chap01soln.ReadFemResp()
 pmf = thinkstats2.Pmf(resp['numkdhh'], label='actual')
 print 'The actual mean of number of children under 18 in a household is: ', pmf.Mean()
