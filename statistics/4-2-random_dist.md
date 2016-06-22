@@ -18,5 +18,11 @@ thinkplot.Show()
 >> That looks random to me!
   
 >> Now I will plot the CDF.
+  
+```python
+cdf_rand = thinkstats2.Cdf(rand)
+thinkplot.Cdf(cdf_rand)
+thinkplot.Show()
+```
 
 
