@@ -26,3 +26,5 @@ thinkplot.Show()
 ```
   
 ![Cdf](https://github.com/aschlissel/dsp/blob/master/randomrandom_cdf.png)
+  
+>> The distribution looks uniform to me, therefore, I would say that the numbers appear to be actually random.
