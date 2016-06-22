@@ -25,4 +25,4 @@ thinkplot.Cdf(cdf_rand)
 thinkplot.Show()
 ```
   
-![Cdf]
+![Cdf](https://github.com/aschlissel/dsp/blob/master/randomrandom_cdf.png)
