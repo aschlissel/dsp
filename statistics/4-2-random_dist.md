@@ -24,5 +24,5 @@ cdf_rand = thinkstats2.Cdf(rand)
 thinkplot.Cdf(cdf_rand)
 thinkplot.Show()
 ```
-
-
+  
+![Cdf]
